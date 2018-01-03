@@ -2,6 +2,8 @@
 
 An implementation of ExplodingCan's exploit extracted from FuzzBunch, the "Metasploit" of the NSA.
 
+![exploit](https://user-images.githubusercontent.com/1675387/34507862-78233a98-f03a-11e7-87ff-bd01a5630290.png)
+
 ## Details
 
 * **Vulnerability**: Microsoft IIS WebDav 'ScStoragePathFromUrl' Remote Buffer Overflow
